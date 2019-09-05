@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+}
+.container
+{
+    height: 100vh;
+    width: 100vw;
+    background-size: 100% 100%; /* hình nền hiện full screen */
+    /* background-image: url(../images/background.jpg); */
+    /* background-color: rgb(246, 199, 199);
+    /* background-repeat: no-repeat;  để hình không bị repeat */
+    /*background-position: center center; */
+    background: rgb(241, 209, 209) url(../images/background.jpg) no-repeat center center;  /* gộp lại thành 1 dòng */
+    position: relative;
+}
+
+.box-center
+{
+    text-align: center;
+    position: absolute;
+    top: 150px;
+    bottom:0px;
+    right: 467px;
+    left: 442px;
+    margin: 0 auto;
+    width: 360px;
+    height: 478px;
+    background-color: rgb(253, 222, 222);
+    /* display:block */ /* nếu viết thuộc tính display này cộng với định dạng text-align:center trên phần CONTAINER thì không thể canh
+    giữa được vì display block chiếm hết phần box-center rồi!! */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.avatar
+{
+    display: block; /* nếu k có display này thì sẽ k dùng đc margin-top vì đầy là thẻ a nên cần có display */
+    margin-top: 46px;
+}
+.author
+{
+    font-size: 25pt;
+    margin: 30px 0;
+    color: rgb(240, 106, 106)
+}
+.des
+{
+    font-size: 20pt;
+}
+.list-icon
+{
+    margin: 0px 89px;
+    width: 150px
+    line-heitgh: 1em;
+}
+.list-icon .icon
+{
+    text-decoration: none;
+    float: left;
+    margin: 10 10px;
+    font-size: 50px;
+    color: rgb(240, 106, 106)
+}
